@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
+  }
+
+  
+  .flip{
+    transform: rotateY(180deg);
+  }
+
+
+  @keyframes scale-up {
+    0% {
+      transform: scale(0.7);
+      opacity: 0.6;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-hide {
+    0% {
+      transform: translateX(0px);
+      opacity: 0;
+    }
+
+    33% {
+      opacity: 1;
+    }
+
+    66% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+
+    
+  }
+
+  .scale-up-animation {
+    animation: scale-up 1s ease-out;
+  } 
+  .slide-hide-animation {
+    animation: slide-hide 1s infinite;
+  }
+
+  .shad:hover{
+    box-shadow: 0 0 20px #888;
+  }
+  .sky-shadow{
+    box-shadow: 0 0 20px #0EA5E9;
+  }
+  .fuchsia-shadow{
+    box-shadow: 0 0 20px #D946EF;
+  }
+  .green-shadow{
+    box-shadow: 0 0 20px #22C55E;
+  }
+  .orange-shadow{
+    box-shadow: 0 0 20px #F97316;
+  }
+
+
+  /* Custom fade-up animation */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        }
+        .fade-up.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+  /* up there */
+ 
+}

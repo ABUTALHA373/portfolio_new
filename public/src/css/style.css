@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+:root {
+    --primary: #f43f5e
+}
+
+
+* {
+    font-family: "Tilt Neon", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #cfcfcf;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+/* index page  */
+header {
+    background-image: url(../images/hero/06.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (min-width: 1281px) {
+    header {
+        background-image: url(../images/hero/04.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+/* footer {
+  background-image: url(../images/hero/06.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+/* projects page  */
+/*#sec-projects-header {*/
+/*  background-image: url(../images/hero/bgpro.png);*/
+/*  background-attachment: scroll;*/
+/*  background-repeat: no-repeat;*/
+/*  background-position: center;*/
+/*  background-size:;*/
+/*  background-attachment: fixed;*/
+/*}*/
+
+.btn-shadow {
+    box-shadow: 0 0 20px var(--primary);
+}
+
+.btn-shadow:hover {
+    box-shadow: none;
+}
+
+.pr-shadow {
+    box-shadow: 0 0 20px var(--primary);
+}
+
+/* .pr-shadow:hover{
+  box-shadow: none;
+} */
+
+/* Custom tooltip styles */
+.tippy-box[data-theme~='custom'] {
+    background-color: var(--primary);
+    border: 1px solid white;
+}
+
+/* Customize the text color */
+.tippy-box[data-theme~='custom'] .tippy-content {
+    color: #ffffff !important;
+}
+
+/* Customize the arrow color */
+.tippy-box[data-theme~='custom'] .tippy-arrow {
+    color: var(--primary) !important;
+}
+
+ul {
+    margin: 0 !important;
+}
+
+li::marker {
+    color: var(--primary);
+}
